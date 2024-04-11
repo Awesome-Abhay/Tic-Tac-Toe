@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+section{
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(72 71 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+h1{
+    font-size: xx-large;
+    color: white;
+    text-decoration: underline;
+}
+.box{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 5px white;
+}
+.top{
+    position: absolute;
+    width: 450px;
+    height: 5px;
+    background-color: red;
+    top: 77px;
+}
+.hor-mid{
+    position: absolute;
+    width: 450px;
+    height: 5px;
+    background-color: red;
+    top: 245px;
+}
+.bottom{
+    position: absolute;
+    width: 450px;
+    height: 5px;
+    background-color: red;
+    bottom: 77px;
+}
+.left{
+    position: absolute;
+    height: 450px;
+    width: 5px;
+    background-color: red;
+    left: 88px;
+}
+.ver-mid{
+    position: absolute;
+    height: 450px;
+    width: 5px;
+    background-color: red;
+    left: 241px;
+}
+.right{
+    position: absolute;
+    height: 450px;
+    width: 5px;
+    background-color: red;
+    right: 94px;
+}
+.rightDiag{
+    position: absolute;
+    height: 602px;
+    width: 5px;
+    background-color: red;
+    left: 241px;
+    transform: rotate(45deg);
+}
+.leftDiag{
+    position: absolute;
+    height: 602px;
+    width: 5px;
+    background-color: red;
+    left: 241px;
+    transform: rotate(137deg);
+}
+.underbox{
+    height: 145px;
+    width: 145px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset{
+    height: 40px;
+    width: 120px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+.reset:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+.zero{
+    height: 70px;
+    width: 70px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+.disable{
+    pointer-events: none;
+}
+.scaleUp{
+    transform: scale(2);
+}
+.hide{
+    visibility: hidden;
+}
